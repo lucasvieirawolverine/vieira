@@ -1,0 +1,20 @@
+create database usuario;
+
+
+create table usuario(
+id int(20) primary key auto_increment,
+nome varchar(200) not null,
+senha varchar(100) not null,
+
+);
+
+create table log(
+id int(15) insigned  not null auto_increment,
+hora datetime not null,
+ip varchar(17) not null,
+mensagem text COLATTE latin1_general_ci not null,
+primary key(id),
+key 'hora' (hora)
+);
+
+insert into log(id,hora,ip,mensagem) value();
